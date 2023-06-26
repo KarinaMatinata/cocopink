@@ -650,6 +650,24 @@ h2 {
     background-position: center;
 }
 
+.caja11 {
+    background-image: url(multimedia/basico8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.caja22 {
+    background-image: url(multimedia/noche8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.caja33 {
+    background-image: url(multimedia/basico3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .tipoc {
     display: inline-block;
 }
