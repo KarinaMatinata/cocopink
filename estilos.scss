@@ -4,11 +4,22 @@
     box-sizing: border-box;
 }
 
-/*barra de navegcion*/
+
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+$font1: Reenie beanie;
+$color1: #504f4f;
+$color2: #b2b0b0;
+$color3: #eeccc8;
+$color4: #2b2929;
+$color5: #a5a1a1;
+$color6: #e426bb;
+
+
+    /*barra de navegcion*/
 
 header {
     background-color: #726f6f;
-    /*height: 80px; */
     padding: 10px 10px;
     font-size: 25px;
 }
@@ -29,8 +40,7 @@ a:hover {
 
 main {
     height: auto;
-    /*width: 100%;*/
-    background-color: #504f4f;
+    background-color: $color1;
     background-size: cover;
     background-position: center;
 }
@@ -39,7 +49,7 @@ main {
 .imagen {
     width: 100%;
     min-height: 600px;
-    background-color: #504f4f;
+    background-color: $color1;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 200px);
@@ -47,7 +57,7 @@ main {
 
 
 .item {
-    border: 5px solid #504f4f;
+    border: 5px solid $color1;
     background-size: cover;
     background-position: center;
 }
@@ -442,53 +452,53 @@ main {
     }
 }
 
-.fondo{
-    background-color: #b2b0b0;
+.fondo {
+    background-color: $color2;
     text-align: center;
     padding: 80px;
 }
 
-.jumbotron{
+.jumbotron {
     background-image: url(multimedia/jumbonuevo.webp);
     background-size: cover;
     background-position: center;
-    border:solid #eeccc8 5px;
+    border: solid $color3 5px;
     height: 400px;
     padding: 40px;
 }
 
-.jumbotron2{
+.jumbotron2 {
     background-image: url(multimedia/jumbonuevo4.webp);
     background-size: cover;
     background-position: center;
-    border:solid #eeccc8 5px;
+    border: solid $color3 5px;
     height: 400px;
     padding: 40px;
 }
 
-.jumbotron3{
+.jumbotron3 {
     background-image: url(multimedia/jumbo4.webp);
     background-size: cover;
     background-position: center;
-    border:solid #eeccc8 5px;
+    border: solid $color3 5px;
     height: 400px;
     padding: 40px;
 }
 
-.jumbotron4{
+.jumbotron4 {
     background-image: url(multimedia/jumbonuevo5.jpg);
     background-size: cover;
     background-position: center;
-    border:solid #eeccc8 5px;
+    border: solid $color3 5px;
     height: 400px;
     padding: 40px;
 }
 
-.jumbotron5{
+.jumbotron5 {
     background-image: url(multimedia/jumbo11.jpg);
     background-size: cover;
     background-position: center;
-    border:solid #eeccc8 5px;
+    border: solid $color3 5px;
     height: 400px;
     padding: 40px;
 }
@@ -496,29 +506,29 @@ main {
 
 
 .jumbotron p {
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
-    color: #2b2929;
-    border: #a5a1a1 solid 3px;
+    color: $color4;
+    border: $color5 solid 3px;
     padding: 20px;
 }
 
 .jumbotron2 p {
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bolder;
-    color: #2b2929;
-    border: #a5a1a1 solid 3px;
+    color: $color4;
+    border: $color5 solid 3px;
     padding: 20px;
 }
 
-h1{
-    color: #e426bb;
-    border: solid #a5a1a1;
+h1 {
+    color: $color6;
+    border: solid $color5;
     padding: 20px;
 }
 
 p {
-    font-family: 'Reenie Beanie', cursive;
+    font-family: $font1, cursive;
     font-size: 30px;
 }
 
@@ -527,7 +537,7 @@ p {
     width: 43%;
     background-color: #d8d6d7;
     color: white;
-    border: 5px solid #504f4f;
+    border: 5px solid $color1;
     padding: 25px;
     margin: 30px;
     text-align: center;
@@ -535,30 +545,31 @@ p {
 
 span {
     font-size: 40px;
-    color: #504f4f;
+    color: $color1;
 }
 
 .count a {
-    background-color: #eeccc8;
+    background-color: $color3;
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Reenie Beanie', cursive;
+    font-family: $font1, cursive;
     font-size: 30px;
     padding: 3px;
     text-transform: uppercase;
 }
-.a h2{
-    background-color: #eeccc8;
+
+.a h2 {
+    background-color: $color3;
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Reenie Beanie', cursive;
+    font-family: $font1, cursive;
     font-size: 30px;
     padding: 30px;
     text-transform: uppercase;
 }
 
-.a h2:hover{
-    color: #2b2929;
+.a h2:hover {
+    color: $color4;
 }
 
 .list {
@@ -566,7 +577,7 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #b2b0b0;
+    background-color: $color2;
 }
 
 .count a:hover {
@@ -574,9 +585,9 @@ span {
 }
 
 h2 {
-    background-color: #eeccc8;
+    background-color: $color3;
     text-align: center;
-    font-family: 'Reenie Beanie', cursive;
+    font-family: $font1, cursive;
     letter-spacing: 5px;
     padding: 20px;
     font-size: 30px;
@@ -584,7 +595,7 @@ h2 {
 
 
 .sec {
-    background-color: #504f4f;
+    background-color: $color1;
     width: 100%;
     height: auto;
 }
@@ -603,7 +614,7 @@ h2 {
 .caja {
     height: 350px;
     width: 350px;
-    background-color: #eeccc8;
+    background-color: $color3;
     border: 2px solid #fff;
     color: #fff;
     text-align: center;
@@ -675,12 +686,12 @@ h2 {
 footer {
     height: auto;
     width: 100%;
-    background-color: #eeccc8;
+    background-color: $color3;
     color: #000000;
     text-align: center;
     padding: 20px;
     font-size: 30px;
-    font-family: 'Reenie Beanie', cursive;
+    font-family: $font1, cursive;
     justify-content: center;
 }
 
