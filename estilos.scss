@@ -7,7 +7,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
+
+/*fuente*/
+
 $font1: Reenie beanie;
+
+
+/*paleta de colores*/
+
 $color1: #504f4f;
 $color2: #b2b0b0;
 $color3: #eeccc8;
@@ -16,16 +23,27 @@ $color5: #a5a1a1;
 $color6: #e426bb;
 
 
-    /*barra de navegcion*/
+/*dimensiones*/
+
+$var1: 100%;
+$var2: 50%;
+
+$ancho: 720px;
+$alto: 100px;
+
+$size: 100px;
+
+
+/*barra de navegcion*/
 
 header {
     background-color: #726f6f;
     padding: 10px 10px;
-    font-size: 25px;
+    font-size: calc($size/4);
 }
 
 .logo {
-    font-size: 40px;
+    font-size: calc($size/2)-10;
 }
 
 .logo span {
@@ -47,8 +65,8 @@ main {
 
 
 .imagen {
-    width: 100%;
-    min-height: 600px;
+    width: $var1;
+    min-height: $ancho - 150;
     background-color: $color1;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -455,52 +473,52 @@ main {
 .fondo {
     background-color: $color2;
     text-align: center;
-    padding: 80px;
+    padding: $size - 20;
 }
 
 .jumbotron {
     background-image: url(multimedia/jumbonuevo.webp);
     background-size: cover;
     background-position: center;
-    border: solid $color3 5px;
-    height: 400px;
-    padding: 40px;
+    border: solid $color3 calc($size/20);
+    height: calc($alto*4);
+    padding: calc($size/2)-10;
 }
 
 .jumbotron2 {
     background-image: url(multimedia/jumbonuevo4.webp);
     background-size: cover;
     background-position: center;
-    border: solid $color3 5px;
-    height: 400px;
-    padding: 40px;
+    border: solid $color3 calc($size/20);
+    height: $ancho - 320;
+    padding: calc($size/2)-10;
 }
 
 .jumbotron3 {
     background-image: url(multimedia/jumbo4.webp);
     background-size: cover;
     background-position: center;
-    border: solid $color3 5px;
-    height: 400px;
-    padding: 40px;
+    border: solid $color3 calc($size/20);
+    height: $ancho - 320;
+    padding: calc($size/2)-10;
 }
 
 .jumbotron4 {
     background-image: url(multimedia/jumbonuevo5.jpg);
     background-size: cover;
     background-position: center;
-    border: solid $color3 5px;
-    height: 400px;
-    padding: 40px;
+    border: solid $color3 calc($size/20);
+    height: $ancho - 320;
+    padding: calc($size/2)-10;
 }
 
 .jumbotron5 {
     background-image: url(multimedia/jumbo11.jpg);
     background-size: cover;
     background-position: center;
-    border: solid $color3 5px;
-    height: 400px;
-    padding: 40px;
+    border: solid $color3 calc($size/20);
+    height: $ancho - 320;
+    padding: calc($size/2)-10;
 }
 
 
@@ -509,42 +527,42 @@ main {
     font-size: xx-large;
     font-weight: bolder;
     color: $color4;
-    border: $color5 solid 3px;
-    padding: 20px;
+    border: $color5 solid calc($size/20)-2;
+    padding: calc($size/5);
 }
 
 .jumbotron2 p {
     font-size: xx-large;
     font-weight: bolder;
     color: $color4;
-    border: $color5 solid 3px;
-    padding: 20px;
+    border: $color5 solid calc($size/20)-2;
+    padding: calc($size/5);
 }
 
 h1 {
     color: $color6;
     border: solid $color5;
-    padding: 20px;
+    padding: calc($size/5);
 }
 
 p {
     font-family: $font1, cursive;
-    font-size: 30px;
+    font-size: calc($size/5)+10;
 }
 
 
 .count {
-    width: 43%;
+    width: calc($var2)-7;
     background-color: #d8d6d7;
     color: white;
-    border: 5px solid $color1;
-    padding: 25px;
-    margin: 30px;
+    border: calc($size/20) solid $color1;
+    padding: calc($size/5)+5;
+    margin: calc($size/5)+10;
     text-align: center;
 }
 
 span {
-    font-size: 40px;
+    font-size: calc($size/2)-10;
     color: $color1;
 }
 
@@ -553,8 +571,8 @@ span {
     text-decoration: none;
     color: #ffffff;
     font-family: $font1, cursive;
-    font-size: 30px;
-    padding: 3px;
+    font-size: calc($size/5)+10;
+    padding: calc($size/5)+10;
     text-transform: uppercase;
 }
 
@@ -563,8 +581,8 @@ span {
     text-decoration: none;
     color: #ffffff;
     font-family: $font1, cursive;
-    font-size: 30px;
-    padding: 30px;
+    font-size: calc($size/5)+10;
+    padding: calc($size/5)+10;
     text-transform: uppercase;
 }
 
@@ -588,15 +606,15 @@ h2 {
     background-color: $color3;
     text-align: center;
     font-family: $font1, cursive;
-    letter-spacing: 5px;
-    padding: 20px;
-    font-size: 30px;
+    letter-spacing: calc($size/20);
+    padding: calc($size/5);
+    font-size: calc($size/5)+10;
 }
 
 
 .sec {
     background-color: $color1;
-    width: 100%;
+    width: $var1;
     height: auto;
 }
 
@@ -613,16 +631,16 @@ h2 {
 
 .caja {
     height: 350px;
-    width: 350px;
+    width: 350%;
     background-color: $color3;
     border: 2px solid #fff;
     color: #fff;
     text-align: center;
-    line-height: 120px;
+    line-height: calc($size)+20;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px;
-    flex-basis: 280px;
+    font-size: calc($size/5);
+    flex-basis: calc($size*2)+80;
 }
 
 .caja1 {
@@ -685,23 +703,23 @@ h2 {
 
 footer {
     height: auto;
-    width: 100%;
+    width: $var1;
     background-color: $color3;
     color: #000000;
     text-align: center;
-    padding: 20px;
-    font-size: 30px;
+    padding: calc($size/5);
+    font-size: calc($size/5)+10;
     font-family: $font1, cursive;
     justify-content: center;
 }
 
 footer p {
-    margin-bottom: 20px;
+    margin-bottom: calc($size/5);
 }
 
 footer i {
     color: #000000;
-    font-size: 50px;
+    font-size: calc($size/2);
 }
 
 footer i:hover {

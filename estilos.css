@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+/*fuente*/
+/*paleta de colores*/
+/*dimensiones*/
 /*barra de navegcion*/
 header {
   background-color: #726f6f;
@@ -34,7 +37,7 @@ main {
 
 .imagen {
   width: 100%;
-  min-height: 600px;
+  min-height: 570px;
   background-color: #504f4f;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -475,7 +478,7 @@ span {
   color: #ffffff;
   font-family: Reenie beanie, cursive;
   font-size: 30px;
-  padding: 3px;
+  padding: 30px;
   text-transform: uppercase;
 }
 
@@ -531,7 +534,7 @@ h2 {
 
 .caja {
   height: 350px;
-  width: 350px;
+  width: 350%;
   background-color: #eeccc8;
   border: 2px solid #fff;
   color: #fff;
