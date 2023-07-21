@@ -308,8 +308,13 @@ i{
 }
 
 .jum {
-    font-size: xx-large;
-    font-weight: bolder;
+    font-size: 20px;
+    color: $color4;
+    border: $color5 solid calc($size/20)-2;
+    padding: calc($size/5);
+}
+jum1{
+    font-size: 20px;
     color: $color4;
     border: $color5 solid calc($size/20)-2;
     padding: calc($size/5);

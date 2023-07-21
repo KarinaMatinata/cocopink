@@ -270,8 +270,14 @@ i {
 }
 
 .jum {
-  font-size: xx-large;
-  font-weight: bolder;
+  font-size: 20px;
+  color: #2b2929;
+  border: rgba(165, 161, 161, 0.0235294118) solid 3px;
+  padding: 20px;
+}
+
+jum1 {
+  font-size: 20px;
   color: #2b2929;
   border: rgba(165, 161, 161, 0.0235294118) solid 3px;
   padding: 20px;
