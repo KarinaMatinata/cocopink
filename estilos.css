@@ -45,6 +45,14 @@
   border-radius: 70%;
 }
 
+form {
+  padding: 40px;
+}
+
+.fron {
+  padding: 40px;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -216,13 +224,22 @@ h1 {
           text-decoration: wavy;
 }
 
+.carrusel {
+  height: 400px;
+  overflow-x: hidden;
+}
+
 .jumbotron2 {
   background-image: url(multimedia/jumbonuevo4.webp);
   background-size: cover;
   background-position: center;
-  border: solid #eeccc8 5px;
+  border: solid #1b1b32 5px;
   height: 400px;
   padding: 40px;
+}
+
+i {
+  font-size: 50px;
 }
 
 .jumbotron3 {
@@ -247,20 +264,12 @@ h1 {
   background-image: url(multimedia/jumbo11.jpg);
   background-size: cover;
   background-position: center;
-  border: solid #eeccc8 5px;
+  border: solid #1b1b32 5px;
   height: 400px;
   padding: 40px;
 }
 
-.jumbotron p {
-  font-size: xx-large;
-  font-weight: bolder;
-  color: #2b2929;
-  border: rgba(165, 161, 161, 0.0235294118) solid 3px;
-  padding: 20px;
-}
-
-.jumbotron2 p {
+.jum {
   font-size: xx-large;
   font-weight: bolder;
   color: #2b2929;

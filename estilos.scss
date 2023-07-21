@@ -73,6 +73,14 @@ $size: 100px;
     border-radius: 70%;
 }
 
+form{
+    padding: 40px;
+}
+
+.fron{
+    padding: 40px;
+}
+
 
 section {
     display: flex;
@@ -254,13 +262,22 @@ h1 {
     text-decoration:wavy;
 }
 
+.carrusel{
+    height: 400px;
+    overflow-x: hidden;
+}
+
 .jumbotron2 {
     background-image: url(multimedia/jumbonuevo4.webp);
     background-size: cover;
     background-position: center;
-    border: solid $color3 calc($size/20);
-    height: $ancho - 320;
+    border: solid $color1 calc($size/20);
+    height: 400px;
     padding: calc($size/2)-10;
+}
+
+i{
+    font-size: 50px;
 }
 
 .jumbotron3 {
@@ -285,22 +302,12 @@ h1 {
     background-image: url(multimedia/jumbo11.jpg);
     background-size: cover;
     background-position: center;
-    border: solid $color3 calc($size/20);
-    height: $ancho - 320;
+    border: solid $color1 calc($size/20);
+    height: 400px;
     padding: calc($size/2)-10;
 }
 
-
-
-.jumbotron p {
-    font-size: xx-large;
-    font-weight: bolder;
-    color: $color4;
-    border: $color5 solid calc($size/20)-2;
-    padding: calc($size/5);
-}
-
-.jumbotron2 p {
+.jum {
     font-size: xx-large;
     font-weight: bolder;
     color: $color4;
@@ -454,7 +461,6 @@ h2 {
 .tipoc {
     display: flex;
 }
-
 
 
 /*footer*/
