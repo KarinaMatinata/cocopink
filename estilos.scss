@@ -83,7 +83,7 @@ form{
 
 
 section {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -104,7 +104,7 @@ h1 {
 
 .cuerpo {
     background-color: #f5f6f7;
-    min-height: 450px;
+    /*min-height: 450px;*/
     text-align: center;
 }
 
@@ -254,7 +254,7 @@ h1 {
     background-size: cover;
     background-position: center;
     border: solid $color1 calc($size/20);
-    height: 400px;
+    height: 50%;
     padding: calc($size/2)-10;
 }
 
@@ -475,7 +475,7 @@ h2 {
 }
 
 .footer{
-    min-height: 450px;
+    height: 350px;
 }
 
 .footer-logo{
@@ -810,3 +810,4 @@ h2 {
         background-image: url(multimedia/paletas\ 2.jpg);
     }
 }
+
