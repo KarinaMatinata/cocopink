@@ -11,6 +11,7 @@
 /*fuente*/
 
 $font1: Quicksand;
+$font2: Rubik Dirt;
 
 
 /*paleta de colores*/
@@ -21,6 +22,16 @@ $color3: #eeccc8;
 $color4: #2b2929;
 $color5: #a5a1a106;
 $color6: #e426bb;
+$color7: #ffffffb5;
+$color8: #909095;
+$color9: #e257b8;
+$color10: #0a0a23;
+$color11: #f5f6f7;
+$color12: #615151;
+$color13: #ffffff;
+$color14: #2b2b2c9c;
+
+
 
 
 /*dimensiones*/
@@ -29,19 +40,20 @@ $var1: 100%;
 $var2: 50%;
 
 $ancho: 720px;
-$alto: 100px;
 
 $size: 100px;
+$size1: 50px;
+$size2: 10px;
 
 
 /*barra de navegcion*/
 
 .navbar {
     padding: 2rem;
-    background-color:#909095;
-    font-size: 20px;
+    background-color: $color8;
+    font-size: calc($size1)-30;
     font-family: $font1;
-    color: #ffffffb5;
+    color: $color7;
 }
 
 .navbar-collapse {
@@ -50,40 +62,39 @@ $size: 100px;
 }
 
 .nav-logo{
-    height: 90px;
-    width: 90px;
-    margin: 15px;
-    border-radius: 70%;
+    height: calc($size)-10;
+    width: calc($size)-10;
+    margin: calc($size2)+5;
+    border-radius: calc($var2)+20;
 }
 
 /*cuerpo*/
 
 .bi-bi{
     font-size: 2.9rem;
-    color: #e257b8;
-    background-color: #0a0a23;
-    padding: 8px 19px;
-    border-radius: 50%;
+    color: $color9;
+    background-color: $color10;
+    padding: calc($size2)-2 calc($size2)+9;
+    border-radius: calc($var2);
 }
 
 .nav-logo-logo{
-    height: 220px;
-    width: 220px;
-    margin: 25px;
-    border-radius: 70%;
+    height: calc($size*2)+20;
+    width: calc($size*2)+20;
+    margin: calc($size1)-25;
+    border-radius: calc($var2)+20;
 }
 
 form{
-    padding: 40px;
+    padding: calc($size1)-10;
 }
 
 .fron{
-    padding: 40px;
+    padding: calc($size1)-10;
 }
 
 
 section {
-    /*display: flex;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -91,20 +102,19 @@ section {
 
 h1 {
     font-size: 2.0rem;
-    font-family: rubik dirt, cursive;
-    letter-spacing: 8px;
+    font-family: $font2;
+    letter-spacing: calc($size2)-2;
     color: white;
     padding: calc($size/5);
 }
 
 .oscuro{
-    color: #1b1b32;
+    color: $color1;
 }
 
 
 .cuerpo {
-    background-color: #f5f6f7;
-    /*min-height: 450px;*/
+    background-color: $color11;
     text-align: center;
 }
 
@@ -114,22 +124,13 @@ h1 {
 
 .cuerpo-principal h2 {
     font-size: 1.5rem;
-    color: #615151;
+    color: $color12;
 }
-
-
-/*main {
-    height: auto;
-    background-color: #f5f6f7d3;
-    background-size: cover;
-    background-position: center;
-}*/
-
 
 .imagen {
     width: $var1;
     min-height: $ancho - 150;
-    background-color:#1b1b32;
+    background-color: $color1;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 200px);
@@ -137,7 +138,7 @@ h1 {
 
 
 .item {
-    border: 5px solid $color1;
+    border: calc($size2)-5 solid $color1;
     background-size: cover;
     background-position: center;
 }
@@ -254,7 +255,7 @@ h1 {
     background-size: cover;
     background-position: center;
     border: solid $color1 calc($size/20);
-    height: 50%;
+    height: calc($size*4);
     padding: calc($size/2)-10;
 }
 
@@ -263,7 +264,7 @@ h1 {
 }
 
 .carrusel{
-    height: 400px;
+    height: calc($size*4);
     overflow-x: hidden;
 }
 
@@ -272,12 +273,12 @@ h1 {
     background-size: cover;
     background-position: center;
     border: solid $color1 calc($size/20);
-    height: 400px;
+    height: calc($size*4);
     padding: calc($size/2)-10;
 }
 
 i{
-    font-size: 50px;
+    font-size: $size1
 }
 
 .jumbotron3 {
@@ -285,7 +286,7 @@ i{
     background-size: cover;
     background-position: center;
     border: solid $color3 calc($size/20);
-    height: 400px;
+    height: calc($size*4);
     padding: calc($size/2)-10;
 }
 
@@ -294,7 +295,7 @@ i{
     background-size: cover;
     background-position: center;
     border: solid $color3 calc($size/20);
-    height:400px;
+    height: calc($size*4);
     padding: calc($size/2)-10;
 }
 
@@ -303,57 +304,35 @@ i{
     background-size: cover;
     background-position: center;
     border: solid $color1 calc($size/20);
-    height: 400px;
+    height: calc($size*4);
     padding: calc($size/2)-10;
 }
 
 .jum {
-    font-size: 20px;
+    font-size: calc($size1)-30;
     color: $color4;
     border: $color5 calc($size/20)-2;
     padding: calc($size/5);
 }
 
-/*h1 {
-    color: $color6;
-    border: solid $color5;
-    padding: calc($size/5);
-}*/
 
 p {
     font-family: $font1, cursive;
-    font-size: 20px;
+    font-size: calc($size1)-30;
 }
 
-
-/*.count {
-    width: calc($var2)-4;
-    background-color: #909095;
-    color: white;
-    border: calc($size/20) solid $color1;
-    padding: calc($size/5)+15;
-    margin: calc($size/5)+10;
-    text-align: center;
-}*/
 
 span {
-    font-size: 25px;
+    font-size: calc($size1)-25;
     color: $color1;
-    font-family: Rubik Dirt;
+    font-family: $font2;
 }
 
-/*.count a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: $font1, cursive;
-    font-size: calc($size/5);
-    padding: calc($size/5)+10;
-}*/
 
 .a h2 {
     background-color: $color3;
     text-decoration: none;
-    color: #ffffff;
+    color: $color13;
     font-family: $font1, cursive;
     font-size: calc($size/5)+10;
     padding: calc($size/5)+10;
@@ -377,12 +356,7 @@ span {
     
 }
 
-/*.count a:hover {
-    color: $color6;
-}*/
-
 h2 {
-    /*background-color: $color6;*/
     text-align: center;
     font-family: $font1, cursive;
     color: white;
@@ -394,7 +368,7 @@ h2 {
 
 
 .experiencia {
-    padding: 40px 40px 60px 40px;
+    padding: calc($size1)-10 calc($size1)-10 calc($size1)+10 calc($size1)-10;
 }
 
 .seccion-clara {
@@ -402,28 +376,22 @@ h2 {
     background-color: white;
 }
 
-/*.experiencia .row div{
-    height: 250px;
-    background-color: purple;
-    border: 3px solid orange;
-}*/
-
 .experiencia-titulo {
-    font-size: 25px;
+    font-size: calc($size1)-25;
     font-weight: bold;
-    margin: 10px 0;
+    margin: $size2 0;
 }
 
 .experiencia i {
     font-size: 2.5rem;
-    color: #e257b8;
-    background-color: #0a0a23;
-    padding: 8px 19px;
-    border-radius: 50%;
+    color: $color9;
+    background-color: $color10;
+    padding: calc($size2)-2 calc($size2)+9;
+    border-radius: $var2;
 }
 
 .experiencia .columna {
-    padding: 20px;
+    padding: calc($size1)-30;
     border: calc($size/20) solid $color1;
     display: flex;
     flex-direction: column;
@@ -432,7 +400,7 @@ h2 {
     transition: all 0.2s ease-in;
 }
 .experiencia .columna1{
-    padding: 20px;
+    padding: calc($size1)-30;
     border: calc($size/20) solid $color1;
     display: flex;
     flex-direction: column;
@@ -443,18 +411,18 @@ h2 {
 
 .experiencia .columna:hover {
     color: white;
-    background-color: #1b1b32;
+    background-color: $color1;
 }
 
 .badges-contenedor {
-    font-size: 25px;
+    font-size: calc($size1)-25;
     font-family: $font1;
     font-weight: bold;
-    margin: 10px 0;
+    margin: $size2 0;
 }
 
 .badge {
-    margin: 10px;
+    margin: $size2;
 }
 
 .tipoc {
@@ -466,42 +434,42 @@ h2 {
 
 .seccion-oscura {
     color: white;
-    background-color: #1b1b32;
+    background-color: $color1;
 }
 
 .seccion-gris {
     color: white;
-    background-color: #2b2b2c9e;
+    background-color: $color14;
 }
 
 .footer{
-    height: 350px;
+    height: calc($size*3)+50;
 }
 
 .footer-logo{
-    height: 80px;
-    width: 80px;
-    margin: 10px;
-    border-radius: 70%;
+    height: calc($size)-20;
+    width: calc($size)-20;
+    margin: $size2;
+    border-radius: calc($var2)+20;
 }
 
 .footer-texto{
     font-size: 1.5rem;
-    padding: 20px;
-    margin-bottom: 30px;
-    font-family: 'Quicksand', sans-serif;
+    padding: calc($size1)-30;
+    margin-bottom: calc($size)-20;
+    font-family: $font1;
 }
 
 .iconos-redes-sociales a {
-    width: 50px;
-    height: 50px;
+    width: $size1;
+    height: $size1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px;
-    margin: 10px;
-    border: 2px solid white;
-    border-radius: 50px;
+    padding: calc($size2)-8;
+    margin: $size2;
+    border: calc($size2)-8 solid white;
+    border-radius: $size1;
     transition: all 0.2s ease-in;
 }
 
@@ -513,7 +481,7 @@ h2 {
 
 .iconos-redes-sociales a:hover{
     background-color: white;
-    border: 2px solid $color6;
+    border: calc($size2)-8 solid $color6;
 }
 
 .iconos-redes-sociales a:hover i{

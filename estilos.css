@@ -54,7 +54,6 @@ form {
 }
 
 section {
-  /*display: flex;*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -62,7 +61,7 @@ section {
 
 h1 {
   font-size: 2rem;
-  font-family: rubik dirt, cursive;
+  font-family: Rubik Dirt;
   letter-spacing: 8px;
   color: white;
   padding: 20px;
@@ -74,7 +73,6 @@ h1 {
 
 .cuerpo {
   background-color: #f5f6f7;
-  /*min-height: 450px;*/
   text-align: center;
 }
 
@@ -87,12 +85,6 @@ h1 {
   color: #615151;
 }
 
-/*main {
-    height: auto;
-    background-color: #f5f6f7d3;
-    background-size: cover;
-    background-position: center;
-}*/
 .imagen {
   width: 100%;
   min-height: 570px;
@@ -215,7 +207,7 @@ h1 {
   background-size: cover;
   background-position: center;
   border: solid #1b1b32 5px;
-  height: 50%;
+  height: 400px;
   padding: 40px;
 }
 
@@ -276,38 +268,17 @@ i {
   padding: 20px;
 }
 
-/*h1 {
-    color: $color6;
-    border: solid $color5;
-    padding: calc($size/5);
-}*/
 p {
   font-family: Quicksand, cursive;
   font-size: 20px;
 }
 
-/*.count {
-    width: calc($var2)-4;
-    background-color: #909095;
-    color: white;
-    border: calc($size/20) solid $color1;
-    padding: calc($size/5)+15;
-    margin: calc($size/5)+10;
-    text-align: center;
-}*/
 span {
   font-size: 25px;
   color: #1b1b32;
   font-family: Rubik Dirt;
 }
 
-/*.count a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: $font1, cursive;
-    font-size: calc($size/5);
-    padding: calc($size/5)+10;
-}*/
 .a h2 {
   background-color: #eeccc8;
   text-decoration: none;
@@ -334,11 +305,7 @@ span {
   background-color: #fffdfd;
 }
 
-/*.count a:hover {
-    color: $color6;
-}*/
 h2 {
-  /*background-color: $color6;*/
   text-align: center;
   font-family: Quicksand, cursive;
   color: white;
@@ -356,11 +323,6 @@ h2 {
   background-color: white;
 }
 
-/*.experiencia .row div{
-    height: 250px;
-    background-color: purple;
-    border: 3px solid orange;
-}*/
 .experiencia-titulo {
   font-size: 25px;
   font-weight: bold;
@@ -422,7 +384,7 @@ h2 {
 
 .seccion-gris {
   color: white;
-  background-color: rgba(43, 43, 44, 0.6196078431);
+  background-color: rgba(43, 43, 44, 0.6117647059);
 }
 
 .footer {
@@ -439,8 +401,8 @@ h2 {
 .footer-texto {
   font-size: 1.5rem;
   padding: 20px;
-  margin-bottom: 30px;
-  font-family: "Quicksand", sans-serif;
+  margin-bottom: 80px;
+  font-family: Quicksand;
 }
 
 .iconos-redes-sociales a {
