@@ -252,7 +252,7 @@ i {
 }
 
 .jumbotron4 {
-  background-image: url(multimedia/jumbonuevo5.jpg);
+  background-image: url(multimedia/slider.jpg);
   background-size: cover;
   background-position: center;
   border: solid #eeccc8 5px;
@@ -272,14 +272,7 @@ i {
 .jum {
   font-size: 20px;
   color: #2b2929;
-  border: rgba(165, 161, 161, 0.0235294118) solid 3px;
-  padding: 20px;
-}
-
-jum1 {
-  font-size: 20px;
-  color: #2b2929;
-  border: rgba(165, 161, 161, 0.0235294118) solid 3px;
+  border: rgba(165, 161, 161, 0.0235294118) 3px;
   padding: 20px;
 }
 

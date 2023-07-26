@@ -285,16 +285,16 @@ i{
     background-size: cover;
     background-position: center;
     border: solid $color3 calc($size/20);
-    height: $ancho - 320;
+    height: 400px;
     padding: calc($size/2)-10;
 }
 
 .jumbotron4 {
-    background-image: url(multimedia/jumbonuevo5.jpg);
+    background-image: url(multimedia/slider.jpg);
     background-size: cover;
     background-position: center;
     border: solid $color3 calc($size/20);
-    height: $ancho - 320;
+    height:400px;
     padding: calc($size/2)-10;
 }
 
@@ -310,13 +310,7 @@ i{
 .jum {
     font-size: 20px;
     color: $color4;
-    border: $color5 solid calc($size/20)-2;
-    padding: calc($size/5);
-}
-jum1{
-    font-size: 20px;
-    color: $color4;
-    border: $color5 solid calc($size/20)-2;
+    border: $color5 calc($size/20)-2;
     padding: calc($size/5);
 }
 
