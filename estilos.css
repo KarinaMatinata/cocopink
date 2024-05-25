@@ -362,10 +362,40 @@ h2 {
 }
 
 .badges-contenedor {
+  background-color:#1b1b32;
   font-size: 25px;
   font-family: Quicksand;
   font-weight: bold;
   margin: 10px 0;
+border-radius: 10px;
+padding: 10px;
+box-shadow: 4px 4px 23px -1px rgba(0,0,0,0.79);
+-webkit-box-shadow: 4px 4px 23px -1px rgba(0,0,0,0.79);
+-moz-box-shadow: 4px 4px 23px -1px rgba(0,0,0,0.79);
+}
+.button-link {
+  text-decoration: none !important;
+  background-color:#1b1b32;
+color: #fff;
+}
+.button-link-secundario {
+  text-decoration: none !important;
+  background-color:#1b1b32;
+color: #fff;
+}
+.button-link:hover {
+  color: #fff;
+
+}
+.columna:hover .button-link-secundario {
+  background-color: #fff;
+  color: #000;
+
+}
+.columna:hover .badges-contenedor {
+  background-color: #fff;
+  text-decoration: none !important;
+  color: #000;
 }
 
 .badge {
